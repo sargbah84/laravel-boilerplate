@@ -3,7 +3,7 @@
 @endif
 
 @if (config('services.facebook.active'))
-    <a href='{{ route('frontend.auth.social.login', 'facebook') }}' class='btn btn-sm btn-outline-info m-1'><i class='fab fa-facebook'></i> @lang('labels.frontend.auth.login_with', ['social_media' => 'Facebook'])</a>
+    <a href='{{ route('frontend.auth.social.login', 'facebook') }}' class='btn btn-facebook btn-block'><i class='fab fa-facebook'></i> @lang('labels.frontend.auth.login_with', ['social_media' => 'Facebook'])</a>
 @endif
 
 @if (config('services.google.active'))

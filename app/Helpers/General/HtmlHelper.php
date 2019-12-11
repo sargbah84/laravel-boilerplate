@@ -79,7 +79,7 @@ class HtmlHelper
      *
      * @return HtmlString
      */
-    public function formSubmit($title, $classes = 'btn btn-success btn-sm pull-right')
+    public function formSubmit($title, $classes = 'btn btn-success btn-block')
     {
         return html()->submit($title)->class($classes);
     }
