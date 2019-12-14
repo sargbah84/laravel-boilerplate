@@ -23,6 +23,7 @@ Route::group(['middleware' => ['auth', 'password_expires']], function () {
     Route::group(['namespace' => 'User', 'as' => 'user.'], function () {
         // User Dashboard Specific
         Route::get('dashboard', [DashboardController::class, 'index'])->name('dashboard');
+        Route::view('user/post/create', 'frontend.user.post.new');
 
         // User Account Specific
         Route::get('account', [AccountController::class, 'index'])->name('account');
